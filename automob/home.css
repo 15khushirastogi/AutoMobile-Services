@@ -1,0 +1,371 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.header{
+    background-color: rgb(12, 79, 90);
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+}
+.menu-list{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.logo{
+    padding: 15px;
+    font-size: 25px;
+}
+.list-item{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.list-item:hover{
+    background-color: rgb(226, 94, 167);
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.front-page{
+    margin-top: 0;
+    background-image: url("./images/home1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    animation: frontAnimation 9s linear infinite;
+}
+@keyframes frontAnimation {
+    0%{
+        background-image: url("./images/home.jpg");
+    }
+    33.33%{
+        background-image: url("./images/home1.jpg");
+    }
+    66.66%{
+        background-image: url("./images/home2.jpg");
+    }
+    100%{
+        background-image: url("./images/home.jpg");
+    }
+}
+.content-box{
+    margin: 223px;
+    padding: 30px;
+    color: aliceblue;
+    font-weight: bolder;
+}
+.explore-services{
+    padding: 8px;
+    color: white;
+    background-color: rgb(228, 79, 131);
+    border: none;
+    margin-left: 10rem;
+}
+.after-slideshow{
+    margin: 20px;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+.container2{
+    margin:4px;
+    padding: 5px;
+    display: flex;
+}
+.left-side{
+    background-image: url("./images/home3.png");
+    margin-left: 7rem;
+    height: 500px;
+    width: 50%;
+    background-repeat: no-repeat;
+}
+
+.right-side{
+    margin-top: 3rem;
+    margin-right: 7rem;
+}
+.circle{
+    margin: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+}
+.book-service{
+    border-radius: 4px;
+    padding: 8px;
+    border: none;
+    color: white;
+    background-color: rgb(233, 108, 6);
+    margin-left: 15rem;
+    margin-top: 1rem;
+}
+.footer{
+    background-color: rgb(12, 79, 90);
+    color: white;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*Styling for Services.html*/
+
+.services-heading{
+    margin-top: 3rem;
+    display: flex;
+    justify-content:center;
+    font-size: 40px;
+    font-weight: 700;
+    
+}
+.first-word{
+    border-bottom: 4px solid rgb(32, 98, 108);
+}
+.second-word{
+    color: rgb(228, 79, 131);
+    border-bottom: 4px solid rgb(32, 98, 108);
+
+}
+.services-content{
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+.cards{
+    margin: 0.6rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-image1{
+    background-image: url("./images/preventive-card.jpg");
+    height: 250px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-image2{
+    background-image: url("./images/body-repair-card.jpg");
+    height: 250px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.card-image3{
+    background-image: url("./images/car-care-card.jpg");
+    height: 250px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card{
+    border: 2px solid rgb(189, 187, 187);
+    border-radius: 10px;
+    margin: 30px;
+}
+.card-content{
+    text-align: center;
+    padding: 10px;
+}
+.card-heading{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 6px;
+}
+.services-footer{
+    background-color: rgb(12, 79, 90);
+    color: white;
+    margin-top: 11px;
+    padding: 10px;
+    text-align: center;
+}
+.card:hover{
+    box-shadow: 0 0 30px rgb(160, 159, 159,0.5);
+}
+
+/*STYLING FOR PREVENTIVE MAINTENANCE SERVICE*/
+
+.prev-container{
+    margin-top: 4rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    padding: 50px;
+    background-color: white;
+    display: flex;
+    height: 400px;
+}
+.left-img{
+    background-image: url("./images/preventive-measures.jpg");
+    width: 500px;
+    background-size: cover;
+    margin-right: 20px;
+}
+.right-details{
+    padding: 25px;
+    margin-left: 2rem;
+}
+.dir{
+    margin-bottom: 10px;
+}
+.prev-heading{
+    font-size: 28px;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.offer{
+    color: rgb(196, 11, 11);
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.offerprice{
+    display: flex;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+.orig-price{
+    text-decoration: line-through;
+}
+.new-price{
+    color: rgb(196, 11, 11);
+}
+.prev-book-service{
+    background-color: rgb(233, 108, 6);
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    width: 150px;
+    box-shadow: 0 0 6px black;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+.prev-footer{
+    background-color: rgb(12, 79, 90);
+    color: white;
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+
+}
+.left-img2{
+    background-image: url("./images/body-repair.jpg");
+    width: 500px;
+    background-size: cover;
+    margin-right: 20px;
+
+}
+.left-img3{
+    background-image: url("./images/car-care.jpg");
+    width: 500px;
+    background-size: cover;
+    margin-right: 20px;
+}
+
+/*STYLING FOR BOOKING.HTML*/
+.booking-heading{
+    margin-top: 2rem;
+    display: flex;
+    justify-content:center;
+    font-size: 40px;
+    font-weight: 700;
+}
+.book{
+    border-bottom: 4px solid rgb(32, 98, 108);
+}
+.your{
+    color: rgb(228, 79, 131);
+    border-bottom: 4px solid rgb(32, 98, 108);
+
+}
+.service{
+    border-bottom: 4px solid rgb(32, 98, 108);
+}
+.booking-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+    height: 80%;
+}
+.input-box{
+    height: 20px;
+    width: 300px;
+    padding: 3px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: rgb(190, 190, 190);
+}
+.dropdown{
+    height: 20px;
+    width: 90px;
+
+}
+.left-side-form{
+    padding-left: 30px;
+    width: 50%;
+}
+.phone-input{
+    height: 20px;
+    width: 205px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: rgb(190, 190, 190);
+}
+.booking-right-img{
+    height: 300px;
+    width: 300px;
+    margin-right: 450px;
+    background-image: url("./images/booking.jpg");
+    background-size: cover;
+}
+.booking-success{
+    padding: 8px;
+    color: white;
+    background-color: rgb(228, 79, 131);
+    border: none;
+    margin-left: 40rem;
+    border-radius: 4px;
+}
+.booking-footer{
+    background-color: rgb(12, 79, 90);
+    color: white;
+    margin-top: 37px;
+    padding: 10px;
+    text-align: center;
+}
+
+.confirmation-container{
+    padding: 7rem;
+    display: flex;
+
+}
+.left-booking-img{
+    background-image: url("./images/thankyou.jpg");
+    height: 300px;
+    width: 500px;
+    background-size: cover;
+    margin-right: 4rem;
+}
+.right-confirm{
+    padding: 2rem;
+    font-size: 25px;
+}
+.bookingsuccess-footer{
+    background-color: rgb(12, 79, 90);
+    color: white;
+    margin-top: 68px;
+    padding: 10px;
+    text-align: center;
+}
